@@ -1,0 +1,92 @@
+/*0.1.1*/
+/* States */
+
+a:visited{
+  color: gray;
+}
+
+.scorecard a:visited{
+  color: darkblue;
+}
+
+.search a:hover {
+  text-decoration: underline;
+}
+
+a:active{
+  color: red;
+}
+
+.home input:hover {
+background-color: #2A2C2B;
+font-size: 2vmax;
+}
+
+.home a:hover {
+  background-color: #2C3E50;
+  color: white;
+  font-size: 2vmax;
+}
+.home input:active {
+  background-color: white;
+}
+.home a:active {
+  background-color: white;
+}
+
+.hidden {display: none;}
+
+.selected {background-color: white;}
+
+/* Media Queries */
+@media (max-width: 800px) {
+  .home {
+    background: url("../images/jackie_robinson_background_smaller.png") no-repeat;
+    background-size: cover;
+    background-color: #2a2c2b;
+}
+
+  h1 {
+    font-size: 4.236vmax;
+  }
+
+  input, label, select {
+    font-size: 2.618vmax;
+  }
+
+  a {
+    font-size: 2.618vmax;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .home {
+    background-size: 135%;
+    background-color: #2a2c2b;
+  }
+
+  figure {
+    height: 20%px;
+    width: auto;
+    margin: 12vmax 0 6vmax 0;
+  }
+
+  h1 {
+    width: auto;
+  }
+
+}
+
+@media(max-width: 480px) {
+
+  .home {
+    background-size: 135%;
+    background-color: #2a2c2b;
+  }
+
+    button {
+      width: 6em;
+    }
+  }
+}

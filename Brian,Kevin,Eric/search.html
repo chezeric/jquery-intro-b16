@@ -1,0 +1,114 @@
+
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Scorecard - Search Results</title>
+    <meta name="description" content="Baseball scorecards in CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/12cols.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/typography.css">
+    <link rel="stylesheet" type="text/css" href="css/module.css">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="stylesheet" type="text/css" href="css/state.css">
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="js/vendor/modernizr-2.8.0.min.js"></script>
+  </head>
+  <body class="search">
+    <header>
+      <figure class="span_4_of_12">
+        <a href="index.html">
+          <img class="scorecardLogo" src="images/logo.svg" alt="Popfly Logo">
+        </a>
+      </figure>
+    </header>
+    <form>
+      <fieldset class="span_9_of_12">
+        <legend>Search the archives</legend>
+        <label for="team">Team:</label>
+          <select id="team" class="span_4_of_12" name="team" itemscope itemtype="http://schema.org/sportsTeam" itemprop="name">
+            <option>-All teams-</option>
+            <optgroup label="AL East">
+              <option itemref="team">Baltimore Orioles</option><option itemref="team">Boston Red Sox</option><option itemref="team">New York Yankees</option><option itemref="team">Tampa Bay Rays</option><option itemref="team">Toronto Blue Jays</option>
+            </optgroup>
+            <optgroup label="AL Central">
+              <option itemref="team">Chicago White Sox</option><option itemref="team">Cleveland Indians</option><option itemref="team">Detroit Tigers</option><option itemref="team">Kansas City Royals</option><option itemref="team">Minnesota Twins</option>
+            </optgroup>
+            <optgroup label="AL West">
+              <option itemref="team">Houston Astros</option><option itemref="team">Los Angeles Angels</option><option itemref="team">Oakland Athletics</option><option itemref="team">Seattle Mariners</option><option itemref="team">Texas Rangers</option>
+            </optgroup>
+            <optgroup label="NL East">
+              <option itemref="team">Atlanta Braves</option><option itemref="team">Miami Marlins</option><option itemref="team">New York Mets</option><option itemref="team">Philadelphia Phillies</option><option itemref="team">Washington Nationals</option>
+            </optgroup>
+            <optgroup label="NL Central">
+              <option itemref="team">Chicago Cubs</option><option itemref="team">Cincinatti Reds</option><option itemref="team">Milwaukee Brewers</option><option itemref="team">Pitsburgh Pirates</option><option itemref="team">St Louis Cardinals</option>
+            </optgroup>
+            <optgroup label="NL West">
+              <option itemref="team">Arizona Diamondbacks</option><option itemref="team">Colorado Rockies</option><option itemref="team">Los Angeles Dodgers</option><option itemref="team">San Diego Padres</option><option itemref="team">San Francisco Giants</option>
+            </optgroup>
+            <optgroup label="Defunct teams">
+              <option itemref="team">Boston Americans (1901-1907)</option>
+              <option itemref="team">Chicago White Stockings (1901-1903)</option>
+              <option itemref="team">Cleveland Naps (1903-1914)</option>
+              <option itemref="team">Houston Colt .45's (1962-1964)</option>
+              <option itemref="team">Kansas City Athletics (1955-1967)</option>
+              <option itemref="team">Montreal Expos (1969-2004)</option>
+              <option itemref="team">New York Giants (1885-1957)</option>
+              <option itemref="team">New York Highlanders (1903-1912)</option>
+              <option itemref="team">Philadelphia Athletics (1901-1954)</option>
+              <option itemref="team">St Louis Browns (1902-1953)</option>
+              <option itemref="team">Washington Senators (1901-1960)</option>
+            </optgroup>
+          </select>
+        <label for="date">Date:</label><input type="date" id="date" class="span_4_of_12" name="date" value="2012-06-13">
+      </fieldset>
+      <fieldset class="span_3_of_12"><button id="button" type=submit>Search</button></fieldset>
+    </form>
+
+    <!-- The main container is really the window where the search results appear.  Results appear as a type of ul list. -->
+    <main id="results" class="span_9_of_12" itemscope itemtype="http://schema.org/SportsTeam" itemprop="Event">
+      <ul>
+        <h1>Results</h1>
+        <li itemref="main">
+          <a href="scorecard.html">
+            <p><strong>Astros vs Giants, AT&amp;T Park</strong></p>
+            <p>June 13, 2012, 7:15PM - J.A. Happ vs Matt Cain</p>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <h2>Similar Results</h2>
+        <li itemref="main">
+          <a href="scorecard.html">
+            <p><strong>Astros vs Giants, AT&amp;T Park</strong></p>
+            <p>June 12, 2012, 7:15PM - Bud Norris vs Madison Bumgarner</p>
+          </a>
+        <li itemref="main">
+          <a href="scorecard.html">
+            <p><strong>Astros vs Giants, AT&amp;T Park</strong></p>
+            <p>June 14, 2012, 12:46PM - Wandy Rodriguez vs Barry Zito</p>
+          </a>
+        </li>
+        <li itemref="main">
+          <a href="#">
+            <p><strong>Giants vs Astros, Minute Maid Park</strong></p>
+            <p>August 28, 2012, 7:06PM - Matt Cain vs Bud Norris</p>
+          </a>
+        </li>
+      </ul>
+    </main>
+
+
+    <!--Footer contains copyrite info and a link to the contact page-->
+    <footer>
+      <h5>Copywrite information and a link to the Contact page</h5>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>

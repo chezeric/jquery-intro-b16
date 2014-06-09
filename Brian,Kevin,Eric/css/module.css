@@ -1,0 +1,400 @@
+/*2.2.0*/
+/*=============================================================
+                            Modules
+===============================================================*/
+
+footer {
+  text-align: center;
+  margin: 0.618em auto;
+}
+
+/*=============================================================
+                            Home
+===============================================================*/
+
+.home {
+  background: url("../images/jackie_robinson_background_w1680.png") no-repeat;
+  background-size: cover;
+  background-color: #2a2c2b;
+/*  background-position: 50% 0;*/
+}
+
+.home figure {
+  display: block;
+  margin: 2.618vmax auto;
+  text-align: center;
+}
+
+.home img {
+  height: 10vmax;
+  width: auto;
+}
+
+.home h1 {
+  font-family: Chunk, serif;
+/*  font-size: 3vmax;
+*/  text-align: center;
+  margin: 2vmax auto 0 auto;
+  color: #6DBCDB;
+}
+
+.home h2 {
+  font-family: Lato, Helvetica, sans-serif; /*duplicated in typography?*/
+  margin: 2vmax auto 5vmax auto;
+  text-align: center;
+  font-size: 2vmax;
+  color: #D7DADB;
+  font-weight: normal;
+}
+
+.searchbar{
+  display: flex;
+  margin: 0 auto 5vh auto;
+}
+
+.home input, .home h3 {
+  font-size: 1.618vmax;
+  text-align: center;
+  font-family: Lato;
+  flex: 1;
+  margin: 0;
+  padding: .5em;
+  border: none;
+
+}
+
+.home h3 {
+  background-color: rgb(218,53,55);
+  color: #D7DADB;
+  }
+
+.home input {
+  background-color: #D7DADB;
+  color: rgba(215,218,219, .7);
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+
+}
+
+.buttons {
+  display: flex;
+  margin: 0 auto;
+  border-radius: 5%;
+}
+
+.home a {
+  color: #2A2C2B;
+  text-align: center;
+  background-color: #6DBCDB;
+  flex: 1;
+  font-size: 1.618vmax;
+  font-family: Lato;
+  height: 100%;
+  margin: 0 .25%;
+  padding: .5em;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+}
+
+.icon{
+  margin-left: .5em;
+  color: ##337EA3;
+}
+
+/*.homeInputs {
+  background-color: rgba(215,218,219, .15);
+  padding: 3em;
+  margin: 0 auto;
+}*/
+
+/*=============================================================
+                            Search Results
+===============================================================*/
+
+.search {
+  background-color: #2C3E50;
+}
+
+.search header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  text-align: center;
+  color: #D7DADB;
+}
+
+.teamGeo {
+  float: left;
+  margin-top: 6vmax;
+}
+
+.teamGeo p {
+  color: #D7DADB;
+}
+
+form {
+  background-color: #2A2C2B;
+  padding: 4vmax;
+}
+
+fieldset {
+  margin: 2vmax auto;
+  text-align: center;
+}
+
+legend {
+  margin: 5vmax auto;
+  font-family: Chunk;
+  text-transform: uppercase;
+  color: #DA3537;
+  font-size: 5vmax;
+}
+
+label {
+  color: #D7DADB;
+  margin: 0 .5% 0 2%;
+}
+
+form select, form input {
+  font-family: Lato;
+  text-align: center;
+  font-size: 1.618vmax;
+  height: 2.618vmax;
+  background-color: #D7DADB;
+  color: #2A2C2B;
+}
+
+form button {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 1.618vmax;
+  height: 2.618vmax;
+}
+
+main {
+  margin: 5% auto;
+  font-family: Lato, Helvetica, sans-serif;
+  color: #D7DADB;
+}
+
+ul {
+  /*font-weight: lighter;*/
+  margin: 5vh auto 3vh auto;
+}
+
+ul h1, ul h2 {
+  border-bottom: 1px solid #D7DADB;
+}
+
+ul li {
+  margin: 1vh;
+  padding: .2em;
+}
+
+
+/*=============================================================
+                            Scorecard
+===============================================================*/
+
+.scorecard {
+  background-color: #2A2C2B;
+}
+
+.gameView header img {
+  align-self: flex-end;
+  height: 10vmax;
+  width: auto;
+}
+
+.gameView header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  text-align: center;
+  color: #D7DADB;
+}
+
+.gameView header p{
+  font-size:1.5vmax;
+}
+
+.scorecard header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  text-align: center;
+  color: #D7DADB;
+}
+
+.scorecard a {
+  color: #2C3E50;
+}
+
+.scorecardLogo {
+  height: 15vmax;
+  width: auto;
+  padding: 2vmax;
+}
+
+.inning {
+  width: 8vw;
+  height: auto;
+  float: left;
+  border-left: 1px solid black;
+  background-color: #D7DADB;
+}
+.colhead {
+  font-size: 2.5vw;
+  width: 100%;
+  height: 3vw;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.plateappearance {
+  height: 8vw;
+  width: 100%;
+  position: relative;
+}
+
+.diamond {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  border: 1px dashed #2C3E50;
+  height: 50%;
+  width: 50%;
+  transform:rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+}
+
+.playresult {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-top: calc(50% - 1.309vmax);
+}
+
+.backwards {
+  transform:rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+}
+
+.base-1 {
+  border-bottom: 3px solid #267935;
+}
+
+.base-2 {
+  border-right: 3px solid #267935;
+}
+
+.base-3 {
+  border-top: 3px solid #267935;
+}
+
+.base-4 {
+  border-left: 3px solid #267935;
+  background-color: #808080;
+}
+
+[data-rbi]:before {
+  position:absolute;
+  bottom:-1vw;
+  left:1vw;
+  content: attr(data-rbi);
+  font-family: Braille;
+  font-size: 3vw;
+}
+
+[data-outs]:after {
+  position:absolute;
+  bottom:10%;
+  right:10%;
+  display: block;
+  width: 23%;
+  height: 23%;
+  border-radius: 50%;
+  border: 1px solid black;
+  content: attr(data-outs);
+  text-align: center;
+  font-size: 1.618vmax;
+}
+
+.battingorder {
+  height: auto;
+    background-color: #D7DADB;
+}
+
+.playername {
+  height: 8vw;
+  width: 100%;
+  padding: .5em;
+  border-bottom: 1px solid black;
+  color:white;
+}
+.playername figure {
+  height: 7vw;
+  width: 7vw;
+  display: inline-block;
+  float: left;
+  margin-right: 1em;
+}
+.playername img {
+  height: 100%;
+  border: .2em solid #2A2C2B;
+  border-radius: 50%;
+}
+
+.playername h2 {
+  font-size: 1.5vmax;
+  padding-top: 10%;
+}
+
+.playername p {
+  padding: 0;
+  margin-right: .5em;
+  font-size: 1.5vmax;
+  font-weight: lighter;
+  display: inline-block;
+}
+
+
+
+/*=============================================================
+                           Lightbox
+===============================================================*/
+
+.lightbox {
+  /** Hide the lightbox*/
+  display: none;
+  /** Apply basic lightbox styling*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+}
+
+.lightbox:target {
+  /** Show lightbox when it is target*/
+  display: block;
+  /** Remove default browser outline style*/
+  outline: none;
+}
+
+.highlight {
+  margin: 10% auto;
+  text-align: center;
+}
+/*End lightbox module*/

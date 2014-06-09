@@ -1,0 +1,15 @@
+/*0.1.1*/
+/* Layout */
+
+.logo {
+  margin: 1.618em auto;
+  text-align: center;
+}
+
+main {
+  min-height: 30em;
+}
+
+.introduction {
+  margin: 0 11.414em; /* will need to update with skeleton position */
+}
